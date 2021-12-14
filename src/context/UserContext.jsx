@@ -20,7 +20,6 @@ const UserProvider = ({ children }) => {
         throw new Error(`Error: ${error}`)
       })
   }, [])
-  console.log(user)
 
   return (
     <UserContext.Provider

@@ -3,7 +3,6 @@ import { useUser } from '../../context/UserContext'
 
 export default function Profile() {
   const { user } = useUser()
-  console.log(user, 'Profile')
   const { name, likes, avatar, motto, color, header } = user
 
   return (

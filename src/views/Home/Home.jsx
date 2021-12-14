@@ -5,7 +5,6 @@ import { useUser } from '../../context/UserContext'
 const Home = () => {
   const { user } = useUser()
   const [loading, setLoading] = useState(true)
-  console.log(user, 'HOME')
 
   useEffect(() => {
     if (user.name) {
