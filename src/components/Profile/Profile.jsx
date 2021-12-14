@@ -1,7 +1,11 @@
 import LikeList from '../LikeList/LikeList'
+import { useUser } from '../../context/UserContext'
 
-export default function Profile({ user }) {
-  const { name, avatar, likes, motto, color, header } = user
+export default function Profile() {
+  const { user } = useUser()
+  console.log(user, 'Profile')
+  const { name, likes, avatar, motto, color, header } = user
+
   return (
     <div className="bg-gray-100 bg-opacity-95 my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm mx-auto">
       <div className="relative h-40">
